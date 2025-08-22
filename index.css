@@ -1,0 +1,118 @@
+
+/* Layout and background image*/
+body{
+    margin: 0; 
+    padding: 20px 20px; 
+    font-size: 5px; 
+    background-image: url(allison-saeng-kJA4mtHv0go-unsplash.jpg);
+    background-position: center;
+
+}
+/*Head Title*/
+.main-title{
+    padding: 0; 
+    margin:0; 
+    font-size: 8rem; 
+    font-family: "Jaro";
+    font-weight: 400;
+    display: flex; 
+    justify-content: center;
+}
+/*HTML headings*/
+.hero{
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+}
+.subtitle {
+    border-left: 2px solid black; 
+    font-size: 3rem; 
+    font-family: "Jaro";
+    font-weight: 400;
+}
+.subsub{
+        border-left: 2px solid black; 
+        font-size: 3rem; 
+        font-family: "Jaro";
+        font-weight: 400;
+        border-right: 2px solid black; 
+}
+.hour{
+        border-left: 2px solid black; 
+        font-size: 3rem; 
+        font-family: "Jaro";
+        font-weight: 400;
+}
+/*Buy tickets -Animation*/
+ .animation-tickets {
+      position: absolute;
+      top: 0;
+      left: 200px;  
+      font-size: 3rem; 
+      font-family: "Jaro";
+      font-weight: 400;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: moveText 8s linear infinite;
+    }
+ @keyframes moveText {
+      0%   { left: -200px; }
+      100% { left: 100%; }
+    }
+    /* 3 pictures styling*/
+.pictures{
+    display: flex; 
+    justify-content: space-between; 
+    cursor: pointer;
+}
+img{
+    border: 10px solid white; 
+    border-radius: 10px; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+
+}
+/*Hovering text over pictures*/
+.text-ontop1{
+   color:  rgb(113, 192, 113); 
+    font-size: 4rem;
+    font-family: "Jaro"; 
+    position: absolute;
+    top: 400px; 
+    left: 70px; 
+   transition: 0.6s;
+   opacity: 0; 
+
+}
+.text-ontop2{
+    color:  rgb(113, 192, 113); 
+    font-size: 4rem;
+    opacity: 0; 
+    font-family: "Jaro"; 
+    position: absolute;
+    top: 400px; 
+    left:  550px; 
+   transition: 0.6s;
+
+}
+.text-ontop3{
+    color:  rgb(113, 192, 113); 
+    font-size: 4rem;
+    opacity: 0; 
+    font-family: "Jaro"; 
+    position: absolute;
+    top: 400px; 
+    right: 60px; 
+   transition: 0.6s;
+}
+
+.text-ontop1:hover{
+    opacity:1; 
+}
+.text-ontop2:hover{
+    opacity:1; 
+}
+.text-ontop3:hover{
+    opacity:1; 
+}
